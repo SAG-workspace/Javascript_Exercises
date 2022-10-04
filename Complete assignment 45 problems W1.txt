@@ -1,0 +1,552 @@
+//1.	Install Node.js and VS Code on your computer. [DONE] // 
+
+//2.	Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”//
+var namePerson = "Shakaib Arslan";
+    console.log("Hello "+namePerson+", would you like to learn some Python today?");
+//End//
+
+//3.	Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.//
+var namePerson = "shakaib arslan";
+    console.log("Name in UPPER CASE is " +namePerson.toUpperCase()+".");
+    console.log("Name in lower case is " +namePerson.toLowerCase()+".");
+  
+        var word = namePerson.toLowerCase().split(" "); // to lower all letters and split words using toLowercase & split functions
+        
+            for(var i = 0; i< word.length; i++){    // Capitalize first letter of each word using for loop
+                word[i] = word[i][0].toUpperCase() + word[i].slice(1);
+               }
+
+    console.log("Name in title case is "+word.join(" ")+"."); // using join function with space between each word
+//End//
+
+// 4.	Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks: Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+
+console.log("Quote of Hazrat Ali (RA), “Have hope only on Allah SWT; Afraid not but from your own Sins”");
+
+//End//
+
+// 5.	Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+
+var famous_person = "Hazrat Ali (RA),";
+var salutation = "Quote of ";
+var Quote = "Have hope only on Allah SWT; Afraid not but from your own Sins";
+
+var message = salutation + famous_person + '"' + Quote + '"';
+
+console.log(message);
+
+//End//
+
+//6.	Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+
+var esixname = "\tShakaib\n \tArslan";
+               console.log(esixname);
+               console.log(esixname.replace(/(\t|\n)/gm,""));
+
+//End//
+
+// 7.	Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+
+    console.log("Adding 4 with 4 gives  "+ (4+4));
+    console.log("Subtrating 8 from 0 gives  "+(8-0));
+    console.log("Multiply 4 with 2 gives  "+(4*2));
+    console.log("Divide 8 with 1 gives  "+ (8/1));
+
+
+//End//
+
+/* 8.	You should create four lines that look like this:
+________________________________________
+console.log(5 + 3)
+________________________________________*/
+
+console.log("______________________\n"+(5+3)+"\n"+(5+3)+"\n"+(5+3)+"\n"+(5+3)+"\n______________________");
+
+//End//
+
+//9.	Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+
+var favorite_numb = 313;
+
+console.log("My favorite number is " + favorite_numb);
+
+//End//
+
+//10.	Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
+
+// My Name is Shakaib Arslan and Today is secondth of October 2022. There are many comments on the other programs which depict the demand fulfilment of this question  
+
+//End//
+
+//11.	Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+var friends = ["Saad", "Waseem", "Basit"];
+console.log(friends[0]+"\n");
+console.log(friends[1]+"\n");
+console.log(friends[2]);
+//End//
+
+//12.	Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+
+var friends = ["Saad", "Waseem", "Basit"];
+console.log("Hello "+friends[0]+", hope you are enjoying METAVESRSE Classes \n");
+console.log("Hi "+friends[1]+", hope you are having great time in METAVESRSE Class \n");
+console.log("Salam "+friends[2]+", I am sure that Sir Zia is a profound teacher as well as mentor for us, Loving him a lot \n");
+//End//
+
+//13.	Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+var Vehicles = ["MetroBus", "Tram", "Boat"];
+console.log("I love cycling, but as a mode of transportation, I prefer "+Vehicles[0]+" over car \n");
+console.log("I have seen people commuting via "+Vehicles[1]+" in San Francisco and I really enjoyed its ride as well \n");
+console.log(Vehicles[2]+ "s are great mean of transportation esapcially in metropolis having rivers");
+//End//
+
+//14.	Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+var guest = ["Sir Naeem Zaidi", "Nana Jaan & Dada Jaan", "Ameer Khan"];
+console.log("Aoa "+guest[0]+"; Having you passed away was a great loss for me as you were a great teacher and a mentor. Wish I could invite you on dinner \n");
+console.log("Dear "+guest[1]+", My life became empty when you departed for heavens. May Allah SWT grant you highest places in Jannat-ul-Firdous. I Wish, I could invite you to dinner \n");
+console.log("Salam Muhtaram Janaab "+guest[2]+" sb, Owing to a special affection and love with you, I hereby invite you to dinner at your kind convenience, please  \n");
+
+//End//
+
+//15.	Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+console.log("Salam Muhtaram Janaab "+guest[0]+", " +guest[1]+", I knew that you couldnt make it to attend the dinner, as you will be enjoing Allah's blessings in heavens, InShaAllah \n");
+var guest = ["Sir Naeem Zaidi", "Nana Jaan & Dada Jaan", "Ameer Khan"];
+    for (var i=0; i<=guest.length;i++){
+        if (i==0)
+            guest[i] =  "Sir Khalid Banuri"; 
+        if (i==1)
+            guest[i] =  "Aqeel bhai"; 
+    }
+    for (var i=0; i<guest.length;i++){
+    console.log("Dear "+guest[i]+", Please make arrange to attend an auspacious dinner with me on your kind convenience\n");
+    }
+//End//
+
+//16.	More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+for (var i=0; i<guest.length;i++){
+    console.log("Dear "+guest[i]+", we got the oppurtunity to have a bigger dinner table, So we shall invite more people, accordingly. \n");    
+}
+guest.splice(0,0, "Irfan Bhai");   
+guest.splice(2, 0,"Khalid bhai");      
+guest.push("Sultan B Mehmood sb") // append function was not working
+    for (var i=0; i<guest.length;i++){
+        console.log("Dear "+guest[i]+", Please give us the honor to have your presence in a dinner with us. Thanks")
+    }
+//End//
+
+//17.	Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+console.log("Dear all, It is sadly narrated that we have got only two spaces, so we are oppressed to invite two guest.")
+console.log(guest);
+
+    for (var i=0; i<guest.length;i++){
+        if (i<4) {console.log("Dear "+ guest.pop()+", We are sorry that we can't invite at the moment");}
+            //guest.pop();    
+    }
+
+console.log("Dear "+ guest.pop()+", We are sorry that we can't invite at the moment");
+    for (var i=0; i<guest.length;i++){
+        console.log("Dear "+ guest[i]+", please accept our invitation");}
+        //guest.pop();    
+guest.pop();
+guest.pop();
+console.log(guest);
+    
+//End//
+
+//18.	Seeing the World: Think of at least five places in the world you’d like to visit.
+var cities = ["Cape Town", "Malbourne", "Los Angeles", "Nairobi", "Moscow"];
+    for (i=0; i<cities.length;i++)
+    {
+        console.log(cities[i]+"\n");
+    }
+console.log(cities.slice().sort()); // copying array and arranging list in alphabetical order without mutation 
+console.log(cities); // original list
+    for(var i=4; i>=0; i--){ // reverse order using for loop
+        console.log(cities[i]);
+    }
+console.log(cities.slice().reverse()); // reverse order without mutation 
+console.log(cities);
+console.log(cities.reverse()); // reverse order with mutation
+console.log(cities.reverse()); //  Back to original position
+console.log(cities.sort()); // Alphabatical ordering
+
+//End//
+
+//19.	Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+
+console.log("The number of guest invited are: "+ guest.length);
+
+//End//
+
+//20.	Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+var lang_List = ["Urdu","Pashto","Persian","Arabic"];
+for (i=0;i<lang_List.length;i++){
+    console.log(lang_List[i]);
+}
+
+//End//
+//21.	They think of something you could store in a JavaScript Object. :Write a program that creates Objects containing these items.
+const things = {school: "FG Boys",college: "Islamia college", university: "Islamic University",};
+
+//End//
+//22.	Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+ var lang_List = ["Urdu","Pashto","Persian","Arabic"];
+    for (i=0;i<lang_List.length;i++){
+        console.log(lang_List[8]); // underfined--- Index error
+    }
+//End//
+//23.	Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+let car = 'subaru';
+let bus= 'Hino';
+    console.log(car == 'subaru'? "I predict True.": "False")
+    console.log(car == 'subaru');
+    console.log(car != 'hino');
+    console.log(bus=='yamaha');
+    console.log(bus!='yamaha');
+    console.log(car=='subaru' || bus=='Mazda');
+    console.log(car!='BMW' && bus=='Mazda');
+    console.log(car=='subaru' && bus!='Mazda');
+    console.log(car!='subaru' && bus!='Foton');
+    console.log(car=='BMW' || bus=='Hino');
+    console.log(car=='Subaru' && bus=='Foton');
+    console.log(car=='Foton' && bus=='Foton');
+
+//End//
+
+//24.	More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+let work = 'carpenter';
+let hobby = 'cricket';
+var lang_List = ["Urdu","Pashto","Persian","Arabic"];
+console.log(work == 'carpenter');
+console.log(work !== 'carpenter');
+console.log(work.toLowerCase() == work);
+console.log(work == 'carpenter' && hobby == 'cricket');
+console.log(work == 'carpenter' || hobby == 'cricket');
+console.log('Urdu' in lang_List); // doesnt work
+console.log( lang_List.includes("Urdu")); // it worked
+console.log(!("Pashto" in lang_List));
+//End//
+
+//25.	Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+
+var alien_Color = ["Green","Yellow","Red"];
+    for (i=0;i<alien_Color.length;i++){
+        if (alien_Color[i]=="Green"){
+            console.log("player just earned 5 points");
+        }
+    }
+    for (i=0;i<alien_Color.length;i++){
+        if (alien_Color[i]=="Green"){
+            console.log("player just earned 5 points");
+        }
+        else {console.log("No Output")};
+    }
+
+//End//
+
+//26.	Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+
+for (i=0;i<alien_Color.length;i++){
+    if (alien_Color[i]=="Green"){
+        console.log("player just earned 5 points");
+    }
+    else {console.log("player just earned 10 points");}
+}
+//End//
+
+//27.	Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+    for(i=0;i<alien_Color.length;i++){ 
+    if (alien_Color[i]=="Green"){
+        console.log("player just earned 5 points");}
+    else if(alien_Color[i]=="Yellow")
+     {console.log("player just earned 10 points");}
+    else if(alien_Color[i]=="Red")
+     {console.log("player just earned 15 points");}
+    }
+
+    var alien_Color = "Green"
+    if (alien_Color=="Green"){
+        console.log("player just earned 5 points");}
+    else if(alien_Color=="Yellow")
+     {console.log("player just earned 10 points");}
+    else if(alien_Color=="Red")
+     {console.log("player just earned 15 points");}
+    
+     var alien_Color = "Yellow"
+    if (alien_Color=="Green"){
+        console.log("player just earned 5 points");}
+    else if(alien_Color=="Yellow")
+     {console.log("player just earned 10 points");}
+    else if(alien_Color=="Red")
+     {console.log("player just earned 15 points");}
+    
+     var alien_Color = "Red"
+    if (alien_Color=="Green"){
+        console.log("player just earned 5 points");}
+    else if(alien_Color=="Yellow")
+     {console.log("player just earned 10 points");}
+    else if(alien_Color=="Red")
+     {console.log("player just earned 15 points");}
+    
+//End//
+
+//28.	Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+var person = ["less than 2 years old","at least 2 years old but less than 4","at least 4 years old but less than 13","at least 13 years old but less than 20","at least 20 years old but less than 65","65 or older"]
+for(i=0;i<person.length;i++){ 
+    if (person[i]=="less than 2 years old"){
+        console.log("person is baby");}
+    else if(person[i]=="at least 2 years old but less than 4")
+        {console.log("person is toddler");}
+    else if(person[i]=="at least 4 years old but less than 13")
+        {console.log("person is kid");}
+    else if(person[i]=="at least 13 years old but less than 20")
+        {console.log("person is teenager");}
+    else if(person[i]=="at least 20 years old but less than 65")
+        {console.log("person is adult");}
+    else if(person[i]=="65 or older")
+        {console.log("person is an elder");}
+}
+ 
+//End//
+
+//29.	Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+
+const fav_Fruits = ["orange","banana","apple"];
+for(i=0;i<fav_Fruits.length;i++){ 
+    if (fav_Fruits[i].includes("apple")){
+        console.log("You really like Apples!")
+    }
+    if (fav_Fruits[i].includes("orange")){
+        console.log("You really like oranges!")
+    }
+    if (fav_Fruits[i].includes("banana")){
+        console.log("You really like bananas!")
+    }
+    if (fav_Fruits[i].includes("avocando")){
+        console.log("not favorite!")
+    }
+    if (fav_Fruits[i].includes("peach")){
+        console.log("Not favorite!")
+    }
+}
+
+//End//
+
+//30.	Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+
+const user_Name = ["admin","aslam","akram","sultan", "bhatti"];
+for(i=0;i<user_Name.length;i++){ 
+if (user_Name[i]=="admin"){
+    console.log("Hello "+user_Name[i]+", would you like to see a status report?");}
+else {console.log("Hello "+user_Name[i]+", thank you for logging in again");}
+}
+//End//
+
+//31.	No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+let indiv = ["sultan","ali", "muddasir"];
+if (indiv.length == 0)
+{console.log("We need to find some users!")};
+while(indiv.length!==0)
+{indiv.pop();}
+if (indiv.length == 0)
+{console.log("We need to find some users!")};
+
+
+//End//
+
+//32.	Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+
+var current_users = ['ali','fahd', 'auleman', 'smantha', 'john'];
+var new_Users = ['ali','fahd', 'ikram', 'atiq', 'ahmed'];
+new_Users.toLowerCase;
+    for (i=0; i<current_users.length;i++){
+            if (new_Users.includes(current_users[i]))
+                {console.log(new_Users[i]+" will need to enter a new username");}
+            else {console.log(new_Users[i] +" is available");}
+    } 
+ 
+
+//End//
+
+//33.	Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+
+var numb = [1,2,3,4,5,6,7,8,9];
+var i=0;
+for (i=0;i<numb.length;i++)
+{ 
+    if (numb[i]==1) {console.log(numb[i]+"st\n");
+    } 
+    else if  (numb[i] == 2)
+        {console.log(numb[i]+"nd\n");
+        
+    }else if  (numb[i] == 3)
+        {console.log(numb[i]+"rd\n");} 
+    else 
+    {console.log(numb[i]+"th\n");}
+    
+}
+//End//
+
+//34.	Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+
+var pizza_Name= ["cheese pizza","BBQ pizza", "Hawaian Pizza"];
+    for (i=0;i<pizza_Name.length;i++){
+        console.log(pizza_Name[i]+"\n");
+    }
+    for (i=0;i<pizza_Name.length;i++){
+        console.log("I like "+pizza_Name[i]+"\n");
+    }
+    console.log("Pizza is one of the favorite food of today. The yummy cheese enrich its flavor manifold. Elder or kids, pizza is the love of all. I also really love pizza!\n");
+//End//
+
+//35.	Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+var pet_Animals =["dog","cat","goat"]; // three pet animals
+for (i=0;i<pet_Animals.length;i++){
+    console.log(pet_Animals[i]+"\n");
+}
+
+for (i=0;i<pet_Animals.length;i++)   // Modified code to show each animal is a great pet 
+{ 
+    if (pet_Animals[i]=='dog') {console.log(pet_Animals[i]+" is a great pet\n");
+    } 
+    else if  (pet_Animals[i] == 'cat')
+        {console.log(pet_Animals[i]+" is a great pet\n");
+        
+    } else if  (pet_Animals[i] == 'goat')
+        {console.log(pet_Animals[i]+" is a great pet\n");} 
+}
+console.log("Any of these animals would be a great pet!");
+//End//
+
+//36.	T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+function make_Shirt(size, message){
+console.log("The size of the shirt is "+size+" and message printed on it is '"+message+"'");
+}
+make_Shirt(27,"Let pray for the best");
+//End//
+
+//37.	Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love JavaScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+
+function make_Shirt(size, message = "I Love Javascript"){
+    if (size=='large' || size =='medium')
+    {console.log("The size of the shirt is " +size+" and message printed on it is '"+message+"'");}
+    else {console.log("The size of the shirt is " +size+" and message printed on it is '"+message+"'");}
+}
+    make_Shirt('large');
+    make_Shirt('medium');
+    make_Shirt('super large', 'Java is superb');
+    
+
+//End//
+
+//38.	Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+
+function describe_city(name_City, name_Country = 'Pakistan'){
+console.log(name_City+" is in "+name_Country);
+}
+describe_city('karachi');
+describe_city('Nairobi', 'Kenya');
+describe_city('Lahore');
+//End//
+
+/*39.	City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+"Lahore, Pakistan" Call your function with at least three city-country pairs, and print the value that’s returned.*/
+
+function city_Country(city_Name, country_name){
+    return '"'+city_Name+", "+country_name+'"';
+}
+var msg = city_Country('Lahore', 'Pakistan');
+console.log(msg);
+msg = city_Country('Islamabad', 'Pakistan');
+console.log(msg);
+msg = city_Country('Bangalore', 'India');
+console.log(msg);
+
+//End//
+//40.	Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+
+function make_album(a_name,a_title){
+    music_Album ={
+        artist_Name:string= a_name,
+        album_Title:string=a_title
+    }
+    return music_Album;
+}
+
+let one= make_album('alvis','bad');
+console.log(one);
+let two= make_album('Michale','boys');
+console.log(two);
+let three= make_album('sultan','student');
+console.log(three);
+
+
+function make_album1(a_name,a_title,no_tracks){
+    music_Album ={
+        artist_Name:string= a_name,
+        album_Title:string=a_title,
+        no_of_tracks:Number= no_tracks 
+    }
+    return music_Album;
+}
+let four= make_album1('sultan','student', 4);
+console.log(four);
+//End//
+//41.	Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+
+var magicians= ['ali','gohar'];
+function show_Magitians(mag_names)
+{console.log(mag_names);}
+show_Magitians(magicians);
+//End//
+//42.	Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+
+
+var magician= ['ali','gohar'];
+function make_great(m_names)
+{for (var i=0;i<m_names.length;i++){
+    magician[i]="The Great "+m_names[i];}}
+make_great(magician);
+console.log(magician)
+
+//End//
+
+//43.	Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+
+var magician= ['ali','gohar'];
+function un_great_magician(m_names)
+{   var copy_names=m_names.slice();
+    for (var i=0;i<copy_names.length;i++){
+      copy_names[i]="The Great "+m_names[i];
+     }return copy_names;
+    }
+var copy = un_great_magician(magician);
+console.log(magician);
+console.log(copy);
+
+//End//
+
+//44.	Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
+ 
+function call_sandwitch(...items){
+        console.log("Total Items requested so far on sandwitch are: "+items);
+}
+call_sandwitch("Cheese","Jalapino","salt","mushroom","onion");
+call_sandwitch("Cheese","Jalapino","salt");
+call_sandwitch("mushroom","onion");
+//End//
+
+//45.	Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
+
+function car_info(manuf,model,color,year){
+var car={
+            manufacturer:string =manuf,
+            model_name:string=model,
+            color:string=color,
+            model_year:Number=year
+        }
+console.log(car);
+}
+car_info('toyota', 'corolla', 'white', '1980');
+
+//End//
